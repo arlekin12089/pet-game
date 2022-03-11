@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #576366;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.actions {
+  max-width: 500px;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+#pet-name {
+  background-color: #f9fafa;
+  border-color: #d4d9dd;
+  transition: 0.2s;
+  margin: 0;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  outline: none;
+  border: 2px solid #d4d9dd;
+  border-radius: 4px;
+  box-shadow: 0;
+  box-sizing: border-box;
+  color: #40484a;
+}
+.pet-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pet {
+  border-radius: 5px;
+  background-color: #f6f9fa;
+  display: block;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  margin: 20px;
+  min-height: 300px;
+  position: relative;
+  cursor: pointer;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .pet {
+    flex-basis: 30%;
+  }
+}
+
+.select-animal {
+  height: 50px;
+  padding: 10px 100px;
+  font-size: 1.125rem;
+  line-height: 27px;
+  letter-spacing: 0.01rem;
+  display: inline-block;
+  padding: 10px 50px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ffffff;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  background: #2a5d81;
+}
+
+#animals {
+  margin: 20px 0;
+  background-size: 0.9rem;
+  background-repeat: no-repeat;
+  -webkit-appearance: none !important;
+  background-position: calc(100% - 1rem) center;
+  background-color: #f9fafa;
+  border: 2px solid #d4d9dd;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #4b5658;
+  outline: none;
+  padding: 0.844rem 1rem;
+  padding-right: 3rem;
+  line-height: 1;
+  background-image: url("img/select.svg");
+}
+
+.select-animal:hover {
+  background: linear-gradient(#004652, #004652);
+}
+
+.title {
+  font-size: 20px;
+  font-style: capitalize;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.actions-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn {
+  font-size: 1.125rem;
+  line-height: 20px;
+  letter-spacing: 0.01rem;
+  display: inline-block;
+  padding: 10px 50px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ffffff;
+  user-select: none;
+  cursor: pointer;
+  height: 45px;
+  border: none;
+  margin: 0 5px;
+}
+
+.btn--red {
+  background-color: #ff464f;
+}
+
+.btn--red:hover {
+  background-color: #ff82b3;
+}
+
+.btn--green {
+  background-color: #00b950;
+}
+
+.btn--green:hover {
+  background-color: #00d377;
+}
+
+.btn--yellow {
+  background-color: #ff9800;
+}
+
+.btn--yellow:hover {
+  background-color: #ffd247;
+}
+
+.pet-img {
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+
+progress {
+height: 30px;
+    width: 100%;
+}
+
+.pet li {
+text-align: left;
+margin-bottom: 10px;
+}
+
+.pet li label{
+font-weight: 600;
+font-size: 18px;
+}
+.type {
+font-size: 20px;
+margin: 10px 0;
+}
+.message{
+	text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+b {
+font-weight: 600;
+color: #00b950;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+	margin-bottom: 10px;
+}
